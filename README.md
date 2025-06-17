@@ -19,6 +19,7 @@ NTFS, dan vfat (FAT32)). Di dalam setiap citra sistem berkas, semua berkas dari
 "2" pada namanya dihapus. Dimungkinkan untuk menggunakan alat untuk menganalisis file dan metadatanya atau pengukir untuk memulihkan file yang dihapus. 
 Lihat di bawah konten "file-asli":
 original-files/
+
     ├── audio1
     │   ├── debian.mp3
     │   ├── debian.ogg
@@ -63,7 +64,9 @@ original-files/
         ├── d-text.odt
         ├── d-text.pdf
         └── test.sh
+
 Ada juga berkas yang disebut fs.multiple.xz. Berkas ini memiliki beberapa partisi dan sistem berkas. Lihat struktur di bawah ini:
+
                    Sector  Filesystem
     Partition 1      2048  btrfs
     Partition 2    227328  ext4
