@@ -1,0 +1,51 @@
+2020-11-07 Joao Eriberto Mota Filho <eriberto@eriberto.pro.br>
+
+ Version 1.1.4
+
+ * fs.multiple.xz: fixed partition label for exFAT and NTFS.
+
+2020-11-03 Joao Eriberto Mota Filho <eriberto@eriberto.pro.br>
+
+ Version 1.1.3
+
+ * Updated fsdeploy manpage, after some results in Debian.
+
+2020-11-01 Joao Eriberto Mota Filho <eriberto@eriberto.pro.br>
+
+ Version 1.1.2
+
+ * fsdeploy:
+     - Added a new example in manpage.
+     - Added 'exit 0' to avoid errors with autopkgtest command on Debian.
+
+2020-11-01 Joao Eriberto Mota Filho <eriberto@eriberto.pro.br>
+
+ Version 1.1.1
+
+ * Fixed a Debian package name in fsdeploy manpage.
+ * Updated copyright notice in README file.
+
+2020-10-31 Joao Eriberto Mota Filho <eriberto@eriberto.pro.br>
+
+ Version 1.1
+
+ * Added fsdeploy from Debian as contrib.
+ * Added new option to fsdeploy: original-files.
+ * Added some new pictures.
+ * Added two PDF files protected by passwords. See the README file.
+ * Created fs.multiple.
+ * Updated manpage.
+ * Updated README file.
+
+2020-09-13 Joao Eriberto Mota Filho <eriberto@eriberto.pro.br>
+
+ Version 1.0.1
+
+ * Set 755 for original-files/text2/test.sh.
+ * Some fixes in README.md.
+
+2020-09-12 Joao Eriberto Mota Filho <eriberto@eriberto.pro.br>
+
+ Version 1.0
+
+ * Initial release.

@@ -1,0 +1,71 @@
+NAME
+  fsdeploy - deploy a disk image from forensics-samples
+
+SYNOPSIS
+  fsdeploy <file.xz>
+
+DESCRIPTION
+  fsdeploy is a command to provide a disk image from forensics-samples package
+  to a CI test environment in Debian. It also can provide the original-files
+  directory from forensics-samples.
+
+  fsdeploy will copy file.xz to $AUTOPKGTEST_TMP and unzip it, making the
+  selected file available for CI tests via autopkgtest command. It also can
+  copy original-files to $AUTOPKGTEST_TMP (no unzip needed).
+
+  On Debian systems, forensics-samples-<filesystem> and forensics-samples-files
+  packages will depend of the forensics-samples-tools, that provides fsdeploy
+  command.
+
+OPTIONS
+  Possible values are: fs.btrfs.xz, fs.exfat.xz, fs.ext2.xz, fs.ext4.xz,
+  fs.ntfs.xz, fs.vfat.xz, fs.multiple.xz and original-files.
+
+  fs.multiple.xz has some filesystems.
+
+EXAMPLES
+  See below an example of a possible debian/tests/control file for foremost:
+
+    Test-Command: fsdeploy fs.ntfs.xz;
+                  cd $AUTOPKGTEST_TMP;
+                  foremost -Tq fs.ntfs.xz;
+                  tree -C output-*
+    Depends: @, forensics-samples-ntfs, tree
+    Restrictions: allow-stderr
+
+
+  Now an example for mac-robber:
+
+    Test-Command: fsdeploy original-files;
+                  mac-robber $AUTOPKGTEST_TMP | grep a-text
+    Depends: @, forensics-samples-files
+    
+    Test-Command: [ -e /dev/loop0 ] || exit 77;
+                  fsdeploy fs.ext4.xz;
+                  cd $AUTOPKGTEST_TMP;
+                  mkdir mnt;
+                  mount -o ro,offset=1048576 fs.ext4 mnt;
+                  mac-robber mnt | grep a-text;
+                  umount mnt
+    Depends: @, forensics-samples-ext4
+    # isolation-machine will provide access to /dev/loop0, essential to mount
+    # images using the mount command.
+    # rw-build-tree allow autopkgtest run several times.
+    Restrictions: allow-stderr, isolation-machine, needs-root, rw-build-tree, skippable
+
+  Note that Debian CI environments commonly are not able to run
+  isolation-machine. Consequently, the test will be skipped.
+
+  Example for disktype command:
+
+    Test-Command: fsdeploy fs.multiple.xz;
+                  cd $AUTOPKGTEST_TMP;
+                  disktype fs.multiple
+    Depends: @, forensics-samples-multiple
+
+AUTHOR
+  forensics-samples was written by Joao Eriberto Mota Filho and is available at
+  https://github.com/eribertomota/forensics-samples
+
+  This manual page was written by Joao Eriberto Mota Filho <eriberto@debian.org>
+  for the Debian project (but may be used by others).
