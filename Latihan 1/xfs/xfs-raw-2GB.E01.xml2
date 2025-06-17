@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'
+  version='1.1.0+'>
+  <metadata>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <source>
+    <image_filename>../sleuthkit_test_data/xfs/xfs-raw-2GB.E01</image_filename>
+  </source>
+<!-- fs start: 0 -->
+  <volume offset='0'>
+    <partition_offset>0</partition_offset>
+    <block_size>4096</block_size>
+    <ftype>524288</ftype>
+    <ftype_str>xfs</ftype_str>
+    <block_count>524288</block_count>
+    <first_block>0</first_block>
+    <last_block>524287</last_block>
+    <fileobject>
+      <filename>notes.txt</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>r</name_type>
+      <filesize>19</filesize>
+      <alloc_name>1</alloc_name>
+      <inode>131</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2042-05-08T04:41:08Z</mtime>
+      <ctime>2042-05-08T04:41:08Z</ctime>
+      <atime>2044-06-22T22:02:12Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='40960' img_offset='40960' len='19'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+</dfxml>

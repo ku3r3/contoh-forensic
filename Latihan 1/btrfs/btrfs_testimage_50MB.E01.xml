@@ -1,0 +1,1214 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'
+  version='1.1.0+'>
+  <metadata>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <source>
+    <image_filename>../sleuthkit_test_data/from_brian/btrfs_testimage_50MB.E01</image_filename>
+  </source>
+<!-- fs start: 0 -->
+  <volume offset='0'>
+    <partition_offset>0</partition_offset>
+    <block_size>4096</block_size>
+    <ftype>262144</ftype>
+    <ftype_str>btrfs</ftype_str>
+    <block_count>12207</block_count>
+    <first_block>0</first_block>
+    <last_block>12206</last_block>
+    <fileobject>
+      <filename>.</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>0</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T10:06:50Z</mtime>
+      <ctime>2015-03-28T10:06:50Z</ctime>
+      <atime>2015-03-28T10:04:06Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>..</filename>
+      <partition>1</partition>
+      <id>2</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>0</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T10:06:50Z</mtime>
+      <ctime>2015-03-28T10:06:50Z</ctime>
+      <atime>2015-03-28T10:04:06Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>file_inline</filename>
+      <partition>1</partition>
+      <id>3</id>
+      <name_type>r</name_type>
+      <filesize>642</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>1</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:03Z</mtime>
+      <ctime>2015-03-28T09:54:03Z</ctime>
+      <atime>2015-03-28T09:54:03Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='642' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>file_regular</filename>
+      <partition>1</partition>
+      <id>4</id>
+      <name_type>r</name_type>
+      <filesize>79320</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>2</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:09Z</mtime>
+      <ctime>2015-03-28T09:54:19Z</ctime>
+      <atime>2015-03-28T09:54:09Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='4235264' img_offset='4235264' len='79320'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>file_regular_hardlink</filename>
+      <partition>1</partition>
+      <id>5</id>
+      <name_type>r</name_type>
+      <filesize>79320</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>2</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:09Z</mtime>
+      <ctime>2015-03-28T09:54:19Z</ctime>
+      <atime>2015-03-28T09:54:09Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='4235264' img_offset='4235264' len='79320'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>file_regular_softlink</filename>
+      <partition>1</partition>
+      <id>6</id>
+      <name_type>l</name_type>
+      <filesize>12</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>3</inode>
+      <meta_type>6</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:36Z</mtime>
+      <ctime>2015-03-28T09:54:36Z</ctime>
+      <atime>2015-03-28T09:54:37Z</atime>
+      <link_target>file_regular</link_target>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='12' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>blockdev</filename>
+      <partition>1</partition>
+      <id>7</id>
+      <name_type>b</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>4</inode>
+      <meta_type>5</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:42Z</mtime>
+      <ctime>2015-03-28T09:54:42Z</ctime>
+      <atime>2015-03-28T09:54:42Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>chardev</filename>
+      <partition>1</partition>
+      <id>8</id>
+      <name_type>c</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>4</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:44Z</mtime>
+      <ctime>2015-03-28T09:54:44Z</ctime>
+      <atime>2015-03-28T09:54:44Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>fifo</filename>
+      <partition>1</partition>
+      <id>9</id>
+      <name_type>p</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>6</inode>
+      <meta_type>3</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:46Z</mtime>
+      <ctime>2015-03-28T09:54:46Z</ctime>
+      <atime>2015-03-28T09:54:46Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>empty_folder</filename>
+      <partition>1</partition>
+      <id>10</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>7</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:50Z</mtime>
+      <ctime>2015-03-28T09:54:50Z</ctime>
+      <atime>2015-03-28T09:54:50Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>empty_folder/.</filename>
+      <partition>1</partition>
+      <id>11</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>7</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:50Z</mtime>
+      <ctime>2015-03-28T09:54:50Z</ctime>
+      <atime>2015-03-28T09:54:50Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>empty_folder/..</filename>
+      <partition>1</partition>
+      <id>12</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>0</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T10:06:50Z</mtime>
+      <ctime>2015-03-28T10:06:50Z</ctime>
+      <atime>2015-03-28T10:04:06Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>non_empty_folder</filename>
+      <partition>1</partition>
+      <id>13</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:00Z</mtime>
+      <ctime>2015-03-28T09:55:00Z</ctime>
+      <atime>2015-03-28T09:55:01Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>non_empty_folder/.</filename>
+      <partition>1</partition>
+      <id>14</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:00Z</mtime>
+      <ctime>2015-03-28T09:55:00Z</ctime>
+      <atime>2015-03-28T09:55:01Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>non_empty_folder/..</filename>
+      <partition>1</partition>
+      <id>15</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>0</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T10:06:50Z</mtime>
+      <ctime>2015-03-28T10:06:50Z</ctime>
+      <atime>2015-03-28T10:04:06Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>non_empty_folder/file_inline_again</filename>
+      <partition>1</partition>
+      <id>16</id>
+      <name_type>r</name_type>
+      <filesize>642</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>9</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:00Z</mtime>
+      <ctime>2015-03-28T09:55:00Z</ctime>
+      <atime>2015-03-28T09:55:00Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='642' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>file_inline_zlib</filename>
+      <partition>1</partition>
+      <id>17</id>
+      <name_type>r</name_type>
+      <filesize>642</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <compressed>1</compressed>
+      <inode>10</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:26Z</mtime>
+      <ctime>2015-03-28T09:55:26Z</ctime>
+      <atime>2015-03-28T09:55:26Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' uncompressed_len='642'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>file_regular_zlib</filename>
+      <partition>1</partition>
+      <id>18</id>
+      <name_type>r</name_type>
+      <filesize>79320</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <compressed>1</compressed>
+      <inode>11</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:28Z</mtime>
+      <ctime>2015-03-28T09:55:28Z</ctime>
+      <atime>2015-03-28T09:55:28Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' uncompressed_len='4096'/>
+       <byte_run file_offset='4096' uncompressed_len='4096'/>
+       <byte_run file_offset='8192' uncompressed_len='4096'/>
+       <byte_run file_offset='12288' uncompressed_len='4096'/>
+       <byte_run file_offset='16384' uncompressed_len='4096'/>
+       <byte_run file_offset='20480' uncompressed_len='4096'/>
+       <byte_run file_offset='24576' uncompressed_len='4096'/>
+       <byte_run file_offset='28672' uncompressed_len='4096'/>
+       <byte_run file_offset='32768' uncompressed_len='4096'/>
+       <byte_run file_offset='36864' uncompressed_len='4096'/>
+       <byte_run file_offset='40960' uncompressed_len='4096'/>
+       <byte_run file_offset='45056' uncompressed_len='4096'/>
+       <byte_run file_offset='49152' uncompressed_len='4096'/>
+       <byte_run file_offset='53248' uncompressed_len='4096'/>
+       <byte_run file_offset='57344' uncompressed_len='4096'/>
+       <byte_run file_offset='61440' uncompressed_len='4096'/>
+       <byte_run file_offset='65536' uncompressed_len='4096'/>
+       <byte_run file_offset='69632' uncompressed_len='4096'/>
+       <byte_run file_offset='73728' uncompressed_len='4096'/>
+       <byte_run file_offset='77824' uncompressed_len='1496'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>subvol</filename>
+      <partition>1</partition>
+      <id>19</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>15</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:07Z</mtime>
+      <ctime>2015-03-28T09:56:07Z</ctime>
+      <atime>2015-03-28T09:56:08Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>subvol/.</filename>
+      <partition>1</partition>
+      <id>20</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>15</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:07Z</mtime>
+      <ctime>2015-03-28T09:56:07Z</ctime>
+      <atime>2015-03-28T09:56:08Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>subvol/..</filename>
+      <partition>1</partition>
+      <id>21</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>15</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:07Z</mtime>
+      <ctime>2015-03-28T09:56:07Z</ctime>
+      <atime>2015-03-28T09:56:08Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>subvol/file_regular_again</filename>
+      <partition>1</partition>
+      <id>22</id>
+      <name_type>r</name_type>
+      <filesize>79320</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>16</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:07Z</mtime>
+      <ctime>2015-03-28T09:56:07Z</ctime>
+      <atime>2015-03-28T09:56:07Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='4366336' img_offset='4366336' len='79320'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot</filename>
+      <partition>1</partition>
+      <id>23</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>17</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:28Z</mtime>
+      <ctime>2015-03-28T09:55:28Z</ctime>
+      <atime>2015-03-28T09:55:29Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/.</filename>
+      <partition>1</partition>
+      <id>24</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>17</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:28Z</mtime>
+      <ctime>2015-03-28T09:55:28Z</ctime>
+      <atime>2015-03-28T09:55:29Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/..</filename>
+      <partition>1</partition>
+      <id>25</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>17</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:28Z</mtime>
+      <ctime>2015-03-28T09:55:28Z</ctime>
+      <atime>2015-03-28T09:55:29Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/file_inline</filename>
+      <partition>1</partition>
+      <id>26</id>
+      <name_type>r</name_type>
+      <filesize>642</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>18</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:03Z</mtime>
+      <ctime>2015-03-28T09:54:03Z</ctime>
+      <atime>2015-03-28T09:54:03Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='642' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/file_regular</filename>
+      <partition>1</partition>
+      <id>27</id>
+      <name_type>r</name_type>
+      <filesize>79320</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>19</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>2</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:09Z</mtime>
+      <ctime>2015-03-28T09:54:19Z</ctime>
+      <atime>2015-03-28T09:54:09Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='4235264' img_offset='4235264' len='79320'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/file_regular_hardlink</filename>
+      <partition>1</partition>
+      <id>28</id>
+      <name_type>r</name_type>
+      <filesize>79320</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>19</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>2</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:09Z</mtime>
+      <ctime>2015-03-28T09:54:19Z</ctime>
+      <atime>2015-03-28T09:54:09Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='4235264' img_offset='4235264' len='79320'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/file_regular_softlink</filename>
+      <partition>1</partition>
+      <id>29</id>
+      <name_type>l</name_type>
+      <filesize>12</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>20</inode>
+      <meta_type>6</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:36Z</mtime>
+      <ctime>2015-03-28T09:54:36Z</ctime>
+      <atime>2015-03-28T09:54:37Z</atime>
+      <link_target>file_regular</link_target>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='12' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/blockdev</filename>
+      <partition>1</partition>
+      <id>30</id>
+      <name_type>b</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>21</inode>
+      <meta_type>5</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:42Z</mtime>
+      <ctime>2015-03-28T09:54:42Z</ctime>
+      <atime>2015-03-28T09:54:42Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/chardev</filename>
+      <partition>1</partition>
+      <id>31</id>
+      <name_type>c</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>22</inode>
+      <meta_type>4</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:44Z</mtime>
+      <ctime>2015-03-28T09:54:44Z</ctime>
+      <atime>2015-03-28T09:54:44Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/fifo</filename>
+      <partition>1</partition>
+      <id>32</id>
+      <name_type>p</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>23</inode>
+      <meta_type>3</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:46Z</mtime>
+      <ctime>2015-03-28T09:54:46Z</ctime>
+      <atime>2015-03-28T09:54:46Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/empty_folder</filename>
+      <partition>1</partition>
+      <id>33</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>24</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:50Z</mtime>
+      <ctime>2015-03-28T09:54:50Z</ctime>
+      <atime>2015-03-28T09:54:50Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/empty_folder/.</filename>
+      <partition>1</partition>
+      <id>34</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>24</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:54:50Z</mtime>
+      <ctime>2015-03-28T09:54:50Z</ctime>
+      <atime>2015-03-28T09:54:50Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/empty_folder/..</filename>
+      <partition>1</partition>
+      <id>35</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>17</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:28Z</mtime>
+      <ctime>2015-03-28T09:55:28Z</ctime>
+      <atime>2015-03-28T09:55:29Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/non_empty_folder</filename>
+      <partition>1</partition>
+      <id>36</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>25</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:00Z</mtime>
+      <ctime>2015-03-28T09:55:00Z</ctime>
+      <atime>2015-03-28T09:55:01Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/non_empty_folder/.</filename>
+      <partition>1</partition>
+      <id>37</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>25</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:00Z</mtime>
+      <ctime>2015-03-28T09:55:00Z</ctime>
+      <atime>2015-03-28T09:55:01Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/non_empty_folder/..</filename>
+      <partition>1</partition>
+      <id>38</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>17</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:28Z</mtime>
+      <ctime>2015-03-28T09:55:28Z</ctime>
+      <atime>2015-03-28T09:55:29Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/non_empty_folder/file_inline_again</filename>
+      <partition>1</partition>
+      <id>39</id>
+      <name_type>r</name_type>
+      <filesize>642</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>26</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:00Z</mtime>
+      <ctime>2015-03-28T09:55:00Z</ctime>
+      <atime>2015-03-28T09:55:00Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='642' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/file_inline_zlib</filename>
+      <partition>1</partition>
+      <id>40</id>
+      <name_type>r</name_type>
+      <filesize>642</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <compressed>1</compressed>
+      <inode>27</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:26Z</mtime>
+      <ctime>2015-03-28T09:55:26Z</ctime>
+      <atime>2015-03-28T09:55:26Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' uncompressed_len='642'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/file_regular_zlib</filename>
+      <partition>1</partition>
+      <id>41</id>
+      <name_type>r</name_type>
+      <filesize>79320</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <compressed>1</compressed>
+      <inode>28</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:55:28Z</mtime>
+      <ctime>2015-03-28T09:55:28Z</ctime>
+      <atime>2015-03-28T09:55:28Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' uncompressed_len='4096'/>
+       <byte_run file_offset='4096' uncompressed_len='4096'/>
+       <byte_run file_offset='8192' uncompressed_len='4096'/>
+       <byte_run file_offset='12288' uncompressed_len='4096'/>
+       <byte_run file_offset='16384' uncompressed_len='4096'/>
+       <byte_run file_offset='20480' uncompressed_len='4096'/>
+       <byte_run file_offset='24576' uncompressed_len='4096'/>
+       <byte_run file_offset='28672' uncompressed_len='4096'/>
+       <byte_run file_offset='32768' uncompressed_len='4096'/>
+       <byte_run file_offset='36864' uncompressed_len='4096'/>
+       <byte_run file_offset='40960' uncompressed_len='4096'/>
+       <byte_run file_offset='45056' uncompressed_len='4096'/>
+       <byte_run file_offset='49152' uncompressed_len='4096'/>
+       <byte_run file_offset='53248' uncompressed_len='4096'/>
+       <byte_run file_offset='57344' uncompressed_len='4096'/>
+       <byte_run file_offset='61440' uncompressed_len='4096'/>
+       <byte_run file_offset='65536' uncompressed_len='4096'/>
+       <byte_run file_offset='69632' uncompressed_len='4096'/>
+       <byte_run file_offset='73728' uncompressed_len='4096'/>
+       <byte_run file_offset='77824' uncompressed_len='1496'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/subvol</filename>
+      <partition>1</partition>
+      <id>42</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>15</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:07Z</mtime>
+      <ctime>2015-03-28T09:56:07Z</ctime>
+      <atime>2015-03-28T09:56:08Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/subvol/.</filename>
+      <partition>1</partition>
+      <id>43</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>15</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:07Z</mtime>
+      <ctime>2015-03-28T09:56:07Z</ctime>
+      <atime>2015-03-28T09:56:08Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/subvol/..</filename>
+      <partition>1</partition>
+      <id>44</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>15</inode>
+      <meta_type>2</meta_type>
+      <mode>493</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:07Z</mtime>
+      <ctime>2015-03-28T09:56:07Z</ctime>
+      <atime>2015-03-28T09:56:08Z</atime>
+    </fileobject>
+    <fileobject>
+      <filename>snapshot/subvol/file_regular_again</filename>
+      <partition>1</partition>
+      <id>45</id>
+      <name_type>r</name_type>
+      <filesize>79320</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>16</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:07Z</mtime>
+      <ctime>2015-03-28T09:56:07Z</ctime>
+      <atime>2015-03-28T09:56:07Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='4366336' img_offset='4366336' len='79320'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>after_snap__sparse</filename>
+      <partition>1</partition>
+      <id>46</id>
+      <name_type>r</name_type>
+      <filesize>10485760</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>12</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:21Z</mtime>
+      <ctime>2015-03-28T09:56:21Z</ctime>
+      <atime>2015-03-28T09:56:21Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fill='0' len='10485760'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>after_snap__sparse_partly</filename>
+      <partition>1</partition>
+      <id>47</id>
+      <name_type>r</name_type>
+      <filesize>2097152</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>13</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T09:56:31Z</mtime>
+      <ctime>2015-03-28T09:56:31Z</ctime>
+      <atime>2015-03-28T09:56:24Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fill='0' len='1048576'/>
+       <byte_run file_offset='1048576' fs_offset='4227072' img_offset='4227072' len='4096'/>
+       <byte_run file_offset='1052672' fill='0' len='1044480'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Superblock</filename>
+      <partition>1</partition>
+      <id>48</id>
+      <name_type>v</name_type>
+      <filesize>4096</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>29</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='4096' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$OrphanFiles</filename>
+      <partition>1</partition>
+      <id>49</id>
+      <name_type>V</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>30</inode>
+      <meta_type>11</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+    </fileobject>
+    <fileobject>
+      <filename>$OrphanFiles/OrphanFile-14</filename>
+      <partition>1</partition>
+      <id>50</id>
+      <name_type>-</name_type>
+      <filesize>3417888</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>14</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2015-03-28T10:00:50Z</mtime>
+      <ctime>2015-03-28T10:06:50Z</ctime>
+      <atime>2015-03-28T10:04:36Z</atime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='4497408' img_offset='4497408' len='3417888'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+</dfxml>

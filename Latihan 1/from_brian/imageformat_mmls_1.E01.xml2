@@ -1,0 +1,2273 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'
+  version='1.1.0+'>
+  <metadata>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <source>
+    <image_filename>../sleuthkit_test_data/from_brian/imageformat_mmls_1.E01</image_filename>
+  </source>
+<!-- fs start: 65536 -->
+  <volume offset='65536'>
+    <partition_offset>65536</partition_offset>
+    <block_size>4096</block_size>
+    <ftype>1</ftype>
+    <ftype_str>ntfs</ftype_str>
+    <block_count>6911</block_count>
+    <first_block>0</first_block>
+    <last_block>6910</last_block>
+    <fileobject>
+      <filename>$AttrDef</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>r</name_type>
+      <filesize>2560</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>4</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9441280' img_offset='9506816'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>4</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='7659520' img_offset='7725056' len='2560'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$BadClus</filename>
+      <partition>1</partition>
+      <id>2</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9445376' img_offset='9510912'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>8</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Bitmap</filename>
+      <partition>1</partition>
+      <id>3</id>
+      <name_type>r</name_type>
+      <filesize>864</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>6</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9443328' img_offset='9508864'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>6</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='9424896' img_offset='9490432' len='864'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Boot</filename>
+      <partition>1</partition>
+      <id>4</id>
+      <name_type>r</name_type>
+      <filesize>8192</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>7</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9444352' img_offset='9509888'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>7</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='8192'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend</filename>
+      <partition>1</partition>
+      <id>5</id>
+      <name_type>d</name_type>
+      <filesize>552</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9448448' img_offset='9513984'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>11</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='552' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/.</filename>
+      <partition>1</partition>
+      <id>6</id>
+      <name_type>d</name_type>
+      <filesize>552</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9448448' img_offset='9513984'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>11</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='552' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/..</filename>
+      <partition>1</partition>
+      <id>7</id>
+      <name_type>d</name_type>
+      <filesize>56</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9442304' img_offset='9507840'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>5</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='56' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Deleted</filename>
+      <partition>1</partition>
+      <id>8</id>
+      <name_type>d</name_type>
+      <filesize>48</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>29</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9466880' img_offset='9532416'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='48' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Deleted/.</filename>
+      <partition>1</partition>
+      <id>9</id>
+      <name_type>d</name_type>
+      <filesize>48</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>29</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9466880' img_offset='9532416'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='48' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Deleted/..</filename>
+      <partition>1</partition>
+      <id>10</id>
+      <name_type>d</name_type>
+      <filesize>552</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9448448' img_offset='9513984'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>11</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='552' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$ObjId</filename>
+      <partition>1</partition>
+      <id>11</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>25</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9462784' img_offset='9528320'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Quota</filename>
+      <partition>1</partition>
+      <id>12</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>24</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9461760' img_offset='9527296'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Reparse</filename>
+      <partition>1</partition>
+      <id>13</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>26</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9463808' img_offset='9529344'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata</filename>
+      <partition>1</partition>
+      <id>14</id>
+      <name_type>d</name_type>
+      <filesize>336</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>27</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9464832' img_offset='9530368'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='336' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/.</filename>
+      <partition>1</partition>
+      <id>15</id>
+      <name_type>d</name_type>
+      <filesize>336</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>27</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9464832' img_offset='9530368'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='336' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/..</filename>
+      <partition>1</partition>
+      <id>16</id>
+      <name_type>d</name_type>
+      <filesize>552</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9448448' img_offset='9513984'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>11</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='552' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$Repair</filename>
+      <partition>1</partition>
+      <id>17</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>28</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9465856' img_offset='9531392'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$Txf</filename>
+      <partition>1</partition>
+      <id>18</id>
+      <name_type>d</name_type>
+      <filesize>48</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>31</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9468928' img_offset='9534464'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='48' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$Txf/.</filename>
+      <partition>1</partition>
+      <id>19</id>
+      <name_type>d</name_type>
+      <filesize>48</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>31</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9468928' img_offset='9534464'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='48' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$Txf/..</filename>
+      <partition>1</partition>
+      <id>20</id>
+      <name_type>d</name_type>
+      <filesize>336</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>27</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9464832' img_offset='9530368'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='336' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog</filename>
+      <partition>1</partition>
+      <id>21</id>
+      <name_type>d</name_type>
+      <filesize>568</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>30</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9467904' img_offset='9533440'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='568' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/.</filename>
+      <partition>1</partition>
+      <id>22</id>
+      <name_type>d</name_type>
+      <filesize>568</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>30</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9467904' img_offset='9533440'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='568' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/..</filename>
+      <partition>1</partition>
+      <id>23</id>
+      <name_type>d</name_type>
+      <filesize>336</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>27</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9464832' img_offset='9530368'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='336' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/$Tops</filename>
+      <partition>1</partition>
+      <id>24</id>
+      <name_type>r</name_type>
+      <filesize>100</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>32</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9469952' img_offset='9535488'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='100' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/$TxfLog.blf</filename>
+      <partition>1</partition>
+      <id>25</id>
+      <name_type>r</name_type>
+      <filesize>65536</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>33</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9470976' img_offset='9536512'/>
+      </byte_runs>
+      <mtime>2018-05-16T15:03:15Z</mtime>
+      <ctime>2018-05-16T15:03:15Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='8712192' img_offset='8777728' len='65536'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/$TxfLogContainer00000000000000000001</filename>
+      <partition>1</partition>
+      <id>26</id>
+      <name_type>r</name_type>
+      <filesize>1048576</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>34</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9472000' img_offset='9537536'/>
+      </byte_runs>
+      <mtime>2018-05-16T15:03:15Z</mtime>
+      <ctime>2018-05-16T15:03:15Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='184320' img_offset='249856' len='1048576'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/$TxfLogContainer00000000000000000002</filename>
+      <partition>1</partition>
+      <id>27</id>
+      <name_type>r</name_type>
+      <filesize>1048576</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>35</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9473024' img_offset='9538560'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:52Z</mtime>
+      <ctime>2018-05-16T14:02:52Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='1232896' img_offset='1298432' len='1048576'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$LogFile</filename>
+      <partition>1</partition>
+      <id>28</id>
+      <name_type>r</name_type>
+      <filesize>2097152</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9439232' img_offset='9504768'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>2</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='5230592' img_offset='5296128' len='2097152'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$MFT</filename>
+      <partition>1</partition>
+      <id>29</id>
+      <name_type>r</name_type>
+      <filesize>262144</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>0</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9437184' img_offset='9502720'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='9437184' img_offset='9502720' len='262144'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$MFTMirr</filename>
+      <partition>1</partition>
+      <id>30</id>
+      <name_type>r</name_type>
+      <filesize>4096</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>1</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9438208' img_offset='9503744'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='8192' img_offset='73728' len='4096'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Secure</filename>
+      <partition>1</partition>
+      <id>31</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>9</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9446400' img_offset='9511936'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>9</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='7393280' img_offset='7458816' len='263068'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$UpCase</filename>
+      <partition>1</partition>
+      <id>32</id>
+      <name_type>r</name_type>
+      <filesize>131072</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>10</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9447424' img_offset='9512960'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>10</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='12288' img_offset='77824' len='131072'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Volume</filename>
+      <partition>1</partition>
+      <id>33</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>3</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9440256' img_offset='9505792'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>3</seq>
+    </fileobject>
+    <fileobject>
+      <filename>.</filename>
+      <partition>1</partition>
+      <id>34</id>
+      <name_type>d</name_type>
+      <filesize>56</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9442304' img_offset='9507840'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>5</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='56' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information</filename>
+      <partition>1</partition>
+      <id>35</id>
+      <name_type>d</name_type>
+      <filesize>280</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>36</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9474048' img_offset='9539584'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:00Z</mtime>
+      <ctime>2018-05-16T14:02:00Z</ctime>
+      <atime>2018-05-16T14:02:00Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='280' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/.</filename>
+      <partition>1</partition>
+      <id>36</id>
+      <name_type>d</name_type>
+      <filesize>280</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>36</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9474048' img_offset='9539584'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:00Z</mtime>
+      <ctime>2018-05-16T14:02:00Z</ctime>
+      <atime>2018-05-16T14:02:00Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='280' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/..</filename>
+      <partition>1</partition>
+      <id>37</id>
+      <name_type>d</name_type>
+      <filesize>56</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9442304' img_offset='9507840'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>5</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='56' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/IndexerVolumeGuid</filename>
+      <partition>1</partition>
+      <id>38</id>
+      <name_type>r</name_type>
+      <filesize>76</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>38</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9476096' img_offset='9541632'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:00Z</mtime>
+      <ctime>2018-05-16T14:02:00Z</ctime>
+      <atime>2018-05-16T14:02:00Z</atime>
+      <crtime>2018-05-16T14:02:00Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='76' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/WPSettings.dat</filename>
+      <partition>1</partition>
+      <id>39</id>
+      <name_type>r</name_type>
+      <filesize>12</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>37</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='9475072' img_offset='9540608'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:01:57Z</mtime>
+      <ctime>2018-05-16T14:01:57Z</ctime>
+      <atime>2018-05-16T14:01:57Z</atime>
+      <crtime>2018-05-16T14:01:57Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='65536' len='12' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$OrphanFiles</filename>
+      <partition>1</partition>
+      <id>40</id>
+      <name_type>V</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>256</inode>
+      <meta_type>11</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+<!-- fs start: 28377088 -->
+  <volume offset='28377088'>
+    <partition_offset>28377088</partition_offset>
+    <block_size>4096</block_size>
+    <ftype>1</ftype>
+    <ftype_str>ntfs</ftype_str>
+    <block_count>7679</block_count>
+    <first_block>0</first_block>
+    <last_block>7678</last_block>
+    <fileobject>
+      <filename>$AttrDef</filename>
+      <partition>2</partition>
+      <id>41</id>
+      <name_type>r</name_type>
+      <filesize>2560</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>4</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10489856' img_offset='38866944'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>4</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='8708096' img_offset='37085184' len='2560'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$BadClus</filename>
+      <partition>2</partition>
+      <id>42</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10493952' img_offset='38871040'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>8</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Bitmap</filename>
+      <partition>2</partition>
+      <id>43</id>
+      <name_type>r</name_type>
+      <filesize>960</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>6</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10491904' img_offset='38868992'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>6</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='10473472' img_offset='38850560' len='960'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Boot</filename>
+      <partition>2</partition>
+      <id>44</id>
+      <name_type>r</name_type>
+      <filesize>8192</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>7</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10492928' img_offset='38870016'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>7</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='8192'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend</filename>
+      <partition>2</partition>
+      <id>45</id>
+      <name_type>d</name_type>
+      <filesize>552</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10497024' img_offset='38874112'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>11</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='552' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/.</filename>
+      <partition>2</partition>
+      <id>46</id>
+      <name_type>d</name_type>
+      <filesize>552</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10497024' img_offset='38874112'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>11</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='552' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/..</filename>
+      <partition>2</partition>
+      <id>47</id>
+      <name_type>d</name_type>
+      <filesize>56</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10490880' img_offset='38867968'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:16Z</mtime>
+      <ctime>2018-05-16T14:02:16Z</ctime>
+      <atime>2018-05-16T14:02:16Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>5</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='56' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Deleted</filename>
+      <partition>2</partition>
+      <id>48</id>
+      <name_type>d</name_type>
+      <filesize>48</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>29</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10515456' img_offset='38892544'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='48' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Deleted/.</filename>
+      <partition>2</partition>
+      <id>49</id>
+      <name_type>d</name_type>
+      <filesize>48</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>29</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10515456' img_offset='38892544'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='48' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Deleted/..</filename>
+      <partition>2</partition>
+      <id>50</id>
+      <name_type>d</name_type>
+      <filesize>552</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10497024' img_offset='38874112'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>11</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='552' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$ObjId</filename>
+      <partition>2</partition>
+      <id>51</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>25</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10511360' img_offset='38888448'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Quota</filename>
+      <partition>2</partition>
+      <id>52</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>24</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10510336' img_offset='38887424'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$Reparse</filename>
+      <partition>2</partition>
+      <id>53</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>26</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10512384' img_offset='38889472'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata</filename>
+      <partition>2</partition>
+      <id>54</id>
+      <name_type>d</name_type>
+      <filesize>336</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>27</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10513408' img_offset='38890496'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='336' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/.</filename>
+      <partition>2</partition>
+      <id>55</id>
+      <name_type>d</name_type>
+      <filesize>336</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>27</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10513408' img_offset='38890496'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='336' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/..</filename>
+      <partition>2</partition>
+      <id>56</id>
+      <name_type>d</name_type>
+      <filesize>552</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10497024' img_offset='38874112'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>11</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='552' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$Repair</filename>
+      <partition>2</partition>
+      <id>57</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>28</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10514432' img_offset='38891520'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$Txf</filename>
+      <partition>2</partition>
+      <id>58</id>
+      <name_type>d</name_type>
+      <filesize>48</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>31</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10517504' img_offset='38894592'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='48' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$Txf/.</filename>
+      <partition>2</partition>
+      <id>59</id>
+      <name_type>d</name_type>
+      <filesize>48</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>31</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10517504' img_offset='38894592'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='48' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$Txf/..</filename>
+      <partition>2</partition>
+      <id>60</id>
+      <name_type>d</name_type>
+      <filesize>336</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>27</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10513408' img_offset='38890496'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='336' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog</filename>
+      <partition>2</partition>
+      <id>61</id>
+      <name_type>d</name_type>
+      <filesize>568</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>30</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10516480' img_offset='38893568'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:16Z</mtime>
+      <ctime>2018-05-16T14:02:16Z</ctime>
+      <atime>2018-05-16T14:02:16Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='568' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/.</filename>
+      <partition>2</partition>
+      <id>62</id>
+      <name_type>d</name_type>
+      <filesize>568</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>30</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10516480' img_offset='38893568'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:16Z</mtime>
+      <ctime>2018-05-16T14:02:16Z</ctime>
+      <atime>2018-05-16T14:02:16Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='568' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/..</filename>
+      <partition>2</partition>
+      <id>63</id>
+      <name_type>d</name_type>
+      <filesize>336</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>27</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10513408' img_offset='38890496'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='336' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/$Tops</filename>
+      <partition>2</partition>
+      <id>64</id>
+      <name_type>r</name_type>
+      <filesize>100</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>32</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10518528' img_offset='38895616'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='100' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/$TxfLog.blf</filename>
+      <partition>2</partition>
+      <id>65</id>
+      <name_type>r</name_type>
+      <filesize>65536</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>33</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10519552' img_offset='38896640'/>
+      </byte_runs>
+      <mtime>2018-05-16T15:03:15Z</mtime>
+      <ctime>2018-05-16T15:03:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='9760768' img_offset='38137856' len='65536'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/$TxfLogContainer00000000000000000001</filename>
+      <partition>2</partition>
+      <id>66</id>
+      <name_type>r</name_type>
+      <filesize>1048576</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>34</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10520576' img_offset='38897664'/>
+      </byte_runs>
+      <mtime>2018-05-16T15:03:15Z</mtime>
+      <ctime>2018-05-16T15:03:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='184320' img_offset='28561408' len='1048576'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Extend/$RmMetadata/$TxfLog/$TxfLogContainer00000000000000000002</filename>
+      <partition>2</partition>
+      <id>67</id>
+      <name_type>r</name_type>
+      <filesize>1048576</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>35</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10521600' img_offset='38898688'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:52Z</mtime>
+      <ctime>2018-05-16T14:02:52Z</ctime>
+      <atime>2018-05-16T14:02:16Z</atime>
+      <crtime>2018-05-16T14:02:16Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='1232896' img_offset='29609984' len='1048576'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$LogFile</filename>
+      <partition>2</partition>
+      <id>68</id>
+      <name_type>r</name_type>
+      <filesize>2097152</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10487808' img_offset='38864896'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>2</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='6279168' img_offset='34656256' len='2097152'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$MFT</filename>
+      <partition>2</partition>
+      <id>69</id>
+      <name_type>r</name_type>
+      <filesize>262144</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>0</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10485760' img_offset='38862848'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='10485760' img_offset='38862848' len='262144'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$MFTMirr</filename>
+      <partition>2</partition>
+      <id>70</id>
+      <name_type>r</name_type>
+      <filesize>4096</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>1</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10486784' img_offset='38863872'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='8192' img_offset='28385280' len='4096'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Secure</filename>
+      <partition>2</partition>
+      <id>71</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>9</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10494976' img_offset='38872064'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>9</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='8441856' img_offset='36818944' len='263068'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$UpCase</filename>
+      <partition>2</partition>
+      <id>72</id>
+      <name_type>r</name_type>
+      <filesize>131072</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>10</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10496000' img_offset='38873088'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>10</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='12288' img_offset='28389376' len='131072'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$Volume</filename>
+      <partition>2</partition>
+      <id>73</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>3</inode>
+      <meta_type>1</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10488832' img_offset='38865920'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:15Z</mtime>
+      <ctime>2018-05-16T14:02:15Z</ctime>
+      <atime>2018-05-16T14:02:15Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>3</seq>
+    </fileobject>
+    <fileobject>
+      <filename>.</filename>
+      <partition>2</partition>
+      <id>74</id>
+      <name_type>d</name_type>
+      <filesize>56</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10490880' img_offset='38867968'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:16Z</mtime>
+      <ctime>2018-05-16T14:02:16Z</ctime>
+      <atime>2018-05-16T14:02:16Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>5</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='56' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information</filename>
+      <partition>2</partition>
+      <id>75</id>
+      <name_type>d</name_type>
+      <filesize>280</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>36</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10522624' img_offset='38899712'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:18Z</mtime>
+      <ctime>2018-05-16T14:02:18Z</ctime>
+      <atime>2018-05-16T14:02:18Z</atime>
+      <crtime>2018-05-16T14:02:16Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='280' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/.</filename>
+      <partition>2</partition>
+      <id>76</id>
+      <name_type>d</name_type>
+      <filesize>280</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>36</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10522624' img_offset='38899712'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:18Z</mtime>
+      <ctime>2018-05-16T14:02:18Z</ctime>
+      <atime>2018-05-16T14:02:18Z</atime>
+      <crtime>2018-05-16T14:02:16Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='280' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/..</filename>
+      <partition>2</partition>
+      <id>77</id>
+      <name_type>d</name_type>
+      <filesize>56</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>1</nlink>
+      <uid>48</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10490880' img_offset='38867968'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:16Z</mtime>
+      <ctime>2018-05-16T14:02:16Z</ctime>
+      <atime>2018-05-16T14:02:16Z</atime>
+      <crtime>2018-05-16T14:02:15Z</crtime>
+      <seq>5</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='56' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/IndexerVolumeGuid</filename>
+      <partition>2</partition>
+      <id>78</id>
+      <name_type>r</name_type>
+      <filesize>76</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>38</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10524672' img_offset='38901760'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:18Z</mtime>
+      <ctime>2018-05-16T14:02:18Z</ctime>
+      <atime>2018-05-16T14:02:18Z</atime>
+      <crtime>2018-05-16T14:02:18Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='76' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/WPSettings.dat</filename>
+      <partition>2</partition>
+      <id>79</id>
+      <name_type>r</name_type>
+      <filesize>12</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>37</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+       <byte_run fs_offset='10523648' img_offset='38900736'/>
+      </byte_runs>
+      <mtime>2018-05-16T14:02:16Z</mtime>
+      <ctime>2018-05-16T14:02:16Z</ctime>
+      <atime>2018-05-16T14:02:16Z</atime>
+      <crtime>2018-05-16T14:02:16Z</crtime>
+      <seq>1</seq>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='28377088' len='12' type='resident'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$OrphanFiles</filename>
+      <partition>2</partition>
+      <id>80</id>
+      <name_type>V</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>256</inode>
+      <meta_type>11</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+</dfxml>

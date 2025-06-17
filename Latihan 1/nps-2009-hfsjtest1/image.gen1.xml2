@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'
+  version='1.1.0+'>
+  <metadata>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <source>
+    <image_filename>../sleuthkit_test_data/nps-2009-hfsjtest1/image.gen1.dmg</image_filename>
+  </source>
+<!-- fs start: 0 -->
+  <volume offset='0'>
+    <partition_offset>0</partition_offset>
+    <block_size>4096</block_size>
+    <ftype>4096</ftype>
+    <ftype_str>hfsp</ftype_str>
+    <block_count>2560</block_count>
+    <first_block>0</first_block>
+    <last_block>2559</last_block>
+    <fileobject>
+      <filename>$ExtentsFile</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>r</name_type>
+      <filesize>81920</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>3</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='8400896' img_offset='8400896' len='81920'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$CatalogFile</filename>
+      <partition>1</partition>
+      <id>2</id>
+      <name_type>r</name_type>
+      <filesize>81920</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>4</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='8482816' img_offset='8482816' len='81920'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$BadBlockFile</filename>
+      <partition>1</partition>
+      <id>3</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+    </fileobject>
+    <fileobject>
+      <filename>$AllocationFile</filename>
+      <partition>1</partition>
+      <id>4</id>
+      <name_type>r</name_type>
+      <filesize>4096</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>6</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='4096' img_offset='4096' len='4096'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$AttributesFile</filename>
+      <partition>1</partition>
+      <id>5</id>
+      <name_type>r</name_type>
+      <filesize>81920</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='9383936' img_offset='9383936' len='81920'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>..</filename>
+      <partition>1</partition>
+      <id>6</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_name>1</alloc_name>
+      <inode>0</inode>
+      <meta_type>0</meta_type>
+      <mode>0</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+    </fileobject>
+    <fileobject>
+      <filename>.fseventsd</filename>
+      <partition>1</partition>
+      <id>7</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>21</inode>
+      <meta_type>2</meta_type>
+      <mode>448</mode>
+      <nlink>1</nlink>
+      <uid>501</uid>
+      <gid>501</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:42Z</mtime>
+      <ctime>2009-01-29T17:33:42Z</ctime>
+      <atime>2009-01-29T17:33:41Z</atime>
+      <crtime>2009-01-29T17:33:34Z</crtime>
+    </fileobject>
+    <fileobject>
+      <filename>.fseventsd/..</filename>
+      <partition>1</partition>
+      <id>8</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:35Z</mtime>
+      <ctime>2009-01-29T17:33:35Z</ctime>
+      <crtime>2009-01-29T17:33:30Z</crtime>
+    </fileobject>
+    <fileobject>
+      <filename>.fseventsd/0000000085c085db</filename>
+      <partition>1</partition>
+      <id>9</id>
+      <name_type>r</name_type>
+      <filesize>174</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>26</inode>
+      <meta_type>1</meta_type>
+      <mode>384</mode>
+      <nlink>1</nlink>
+      <uid>501</uid>
+      <gid>501</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:36Z</mtime>
+      <ctime>2009-01-29T17:33:36Z</ctime>
+      <atime>2009-01-29T17:33:36Z</atime>
+      <crtime>2009-01-29T17:33:36Z</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='9478144' img_offset='9478144' len='174'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>.fseventsd/0000000085c086a9</filename>
+      <partition>1</partition>
+      <id>10</id>
+      <name_type>r</name_type>
+      <filesize>149</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>28</inode>
+      <meta_type>1</meta_type>
+      <mode>384</mode>
+      <nlink>1</nlink>
+      <uid>501</uid>
+      <gid>501</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:42Z</mtime>
+      <ctime>2009-01-29T17:33:42Z</ctime>
+      <atime>2009-01-29T17:33:42Z</atime>
+      <crtime>2009-01-29T17:33:42Z</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='9486336' img_offset='9486336' len='149'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>.fseventsd/fseventsd-uuid</filename>
+      <partition>1</partition>
+      <id>11</id>
+      <name_type>r</name_type>
+      <filesize>36</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>22</inode>
+      <meta_type>1</meta_type>
+      <mode>384</mode>
+      <nlink>1</nlink>
+      <uid>501</uid>
+      <gid>501</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:42Z</mtime>
+      <ctime>2009-01-29T17:33:42Z</ctime>
+      <atime>2009-01-29T17:33:42Z</atime>
+      <crtime>2009-01-29T17:33:34Z</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='9465856' img_offset='9465856' len='36'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>.HFS+ Private Directory Data\x0D</filename>
+      <partition>1</partition>
+      <id>12</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>19</inode>
+      <meta_type>2</meta_type>
+      <mode>877</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:30Z</mtime>
+      <ctime>2009-01-29T17:33:30Z</ctime>
+      <atime>2009-01-29T17:33:30Z</atime>
+      <crtime>2009-01-29T17:33:30Z</crtime>
+    </fileobject>
+    <fileobject>
+      <filename>.HFS+ Private Directory Data\x0D/..</filename>
+      <partition>1</partition>
+      <id>13</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:35Z</mtime>
+      <ctime>2009-01-29T17:33:35Z</ctime>
+      <crtime>2009-01-29T17:33:30Z</crtime>
+    </fileobject>
+    <fileobject>
+      <filename>.journal</filename>
+      <partition>1</partition>
+      <id>14</id>
+      <name_type>r</name_type>
+      <filesize>8388608</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>16</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:31Z</mtime>
+      <crtime>2009-01-29T17:33:31Z</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='12288' img_offset='12288' len='8388608'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>.journal_info_block</filename>
+      <partition>1</partition>
+      <id>15</id>
+      <name_type>r</name_type>
+      <filesize>4096</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>17</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:30Z</mtime>
+      <crtime>2009-01-29T17:33:30Z</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='8192' img_offset='8192' len='4096'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>.Trashes</filename>
+      <partition>1</partition>
+      <id>16</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>20</inode>
+      <meta_type>2</meta_type>
+      <mode>731</mode>
+      <nlink>1</nlink>
+      <uid>501</uid>
+      <gid>501</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:42Z</mtime>
+      <ctime>2009-01-29T17:33:42Z</ctime>
+      <atime>2009-01-29T17:33:34Z</atime>
+      <crtime>2009-01-29T17:33:34Z</crtime>
+    </fileobject>
+    <fileobject>
+      <filename>.Trashes/..</filename>
+      <partition>1</partition>
+      <id>17</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:35Z</mtime>
+      <ctime>2009-01-29T17:33:35Z</ctime>
+      <crtime>2009-01-29T17:33:30Z</crtime>
+    </fileobject>
+    <fileobject>
+      <filename>file1.txt</filename>
+      <partition>1</partition>
+      <id>18</id>
+      <name_type>r</name_type>
+      <filesize>28</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>24</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>501</uid>
+      <gid>501</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:42Z</mtime>
+      <ctime>2009-01-29T17:33:42Z</ctime>
+      <atime>2009-01-29T17:33:35Z</atime>
+      <crtime>2009-01-29T17:33:35Z</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='9482240' img_offset='9482240' len='28'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>file2.txt</filename>
+      <partition>1</partition>
+      <id>19</id>
+      <name_type>r</name_type>
+      <filesize>23</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>25</inode>
+      <meta_type>1</meta_type>
+      <mode>420</mode>
+      <nlink>1</nlink>
+      <uid>501</uid>
+      <gid>501</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:35Z</mtime>
+      <ctime>2009-01-29T17:33:35Z</ctime>
+      <atime>2009-01-29T17:33:35Z</atime>
+      <crtime>2009-01-29T17:33:35Z</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='9474048' img_offset='9474048' len='23'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>^^^^HFS+ Private Data</filename>
+      <partition>1</partition>
+      <id>20</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>18</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:30Z</mtime>
+      <ctime>2009-01-29T17:33:30Z</ctime>
+      <atime>2009-01-29T17:33:30Z</atime>
+      <crtime>2009-01-29T17:33:30Z</crtime>
+    </fileobject>
+    <fileobject>
+      <filename>^^^^HFS+ Private Data/..</filename>
+      <partition>1</partition>
+      <id>21</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime>2009-01-29T17:33:35Z</mtime>
+      <ctime>2009-01-29T17:33:35Z</ctime>
+      <crtime>2009-01-29T17:33:30Z</crtime>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+</dfxml>

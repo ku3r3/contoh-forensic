@@ -1,0 +1,697 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'
+  version='1.1.0+'>
+  <metadata>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <source>
+    <image_filename>../sleuthkit_test_data/from_brian/6-fat-undel.dd</image_filename>
+  </source>
+<!-- fs start: 0 -->
+  <volume offset='0'>
+    <partition_offset>0</partition_offset>
+    <sector_size>512</sector_size>
+    <block_size>1024</block_size>
+    <ftype>4</ftype>
+    <ftype_str>fat16</ftype_str>
+    <block_count>12033</block_count>
+    <first_block>0</first_block>
+    <last_block>12032</last_block>
+    <fileobject>
+      <filename>FAT_REC_1   (Volume Label Entry)</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>3</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T21:46:28</mtime>
+    </fileobject>
+    <fileobject>
+      <filename>_rag1.dat</filename>
+      <partition>1</partition>
+      <id>2</id>
+      <name_type>r</name_type>
+      <filesize>1584</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>4</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:51:16</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:50:48</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='45056' img_offset='45056' len='1584'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_rag2.dat</filename>
+      <partition>1</partition>
+      <id>3</id>
+      <name_type>r</name_type>
+      <filesize>3873</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:52:54</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:51:01</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='46080' img_offset='46080' len='3873'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ing.dat</filename>
+      <partition>1</partition>
+      <id>4</id>
+      <name_type>r</name_type>
+      <filesize>780</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>6</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:52:06</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:52:04</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='50176' img_offset='50176' len='780'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ult1.dat</filename>
+      <partition>1</partition>
+      <id>5</id>
+      <name_type>r</name_type>
+      <filesize>3801</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>7</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-15T02:20:44</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:52:25</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='51200' img_offset='51200' len='3801'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ir1</filename>
+      <partition>1</partition>
+      <id>6</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='56320' img_offset='56320' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ir1/.</filename>
+      <partition>1</partition>
+      <id>7</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='56320' img_offset='56320' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ir1/..</filename>
+      <partition>1</partition>
+      <id>8</id>
+      <name_type>d</name_type>
+      <filesize>16384</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='28672' img_offset='28672' len='16384'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ir1/dir2</filename>
+      <partition>1</partition>
+      <id>9</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>869</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:50</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:48</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='59392' img_offset='59392' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ir1/dir2/.</filename>
+      <partition>1</partition>
+      <id>10</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>869</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:50</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:48</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='59392' img_offset='59392' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ir1/dir2/..</filename>
+      <partition>1</partition>
+      <id>11</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='56320' img_offset='56320' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ir1/dir2/frag3.dat</filename>
+      <partition>1</partition>
+      <id>12</id>
+      <name_type>r</name_type>
+      <filesize>2027</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>965</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:54:28</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:54:06</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='60416' img_offset='60416' len='2027'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>_ir1/mult2.dat</filename>
+      <partition>1</partition>
+      <id>13</id>
+      <name_type>r</name_type>
+      <filesize>1715</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>870</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:54:22</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:54:20</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='61440' img_offset='61440' len='1715'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information</filename>
+      <partition>1</partition>
+      <id>14</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='57344' img_offset='57344' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/.</filename>
+      <partition>1</partition>
+      <id>15</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='57344' img_offset='57344' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/..</filename>
+      <partition>1</partition>
+      <id>16</id>
+      <name_type>d</name_type>
+      <filesize>16384</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='28672' img_offset='28672' len='16384'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/_restore{A25F48CA-6632-4143-8EF8-3586A84AB5AF}</filename>
+      <partition>1</partition>
+      <id>17</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>905</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='58368' img_offset='58368' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/_restore{A25F48CA-6632-4143-8EF8-3586A84AB5AF}/.</filename>
+      <partition>1</partition>
+      <id>18</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>905</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='58368' img_offset='58368' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/_restore{A25F48CA-6632-4143-8EF8-3586A84AB5AF}/..</filename>
+      <partition>1</partition>
+      <id>19</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>11</inode>
+      <meta_type>2</meta_type>
+      <mode>365</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='57344' img_offset='57344' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/_restore{A25F48CA-6632-4143-8EF8-3586A84AB5AF}/_P1</filename>
+      <partition>1</partition>
+      <id>20</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>933</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='59392' img_offset='59392' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/_restore{A25F48CA-6632-4143-8EF8-3586A84AB5AF}/_P1/.</filename>
+      <partition>1</partition>
+      <id>21</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>933</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='59392' img_offset='59392' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/_restore{A25F48CA-6632-4143-8EF8-3586A84AB5AF}/_P1/..</filename>
+      <partition>1</partition>
+      <id>22</id>
+      <name_type>d</name_type>
+      <filesize>1024</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>905</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:53:42</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:53:41</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='58368' img_offset='58368' len='1024'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>System Volume Information/_restore{A25F48CA-6632-4143-8EF8-3586A84AB5AF}/_P1/frag3.dat</filename>
+      <partition>1</partition>
+      <id>23</id>
+      <name_type>r</name_type>
+      <filesize>2027</filesize>
+      <alloc_inode>0</alloc_inode>
+      <alloc_name>0</alloc_name>
+      <used>1</used>
+      <inode>965</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <mtime prec="2">2004-02-14T17:54:28</mtime>
+      <atime prec="86400">2004-02-14T05:00:00</atime>
+      <crtime prec="2">2004-02-14T17:54:06</crtime>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='60416' img_offset='60416' len='2027'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$MBR</filename>
+      <partition>1</partition>
+      <id>24</id>
+      <name_type>v</name_type>
+      <filesize>512</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>191619</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='512'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$FAT1</filename>
+      <partition>1</partition>
+      <id>25</id>
+      <name_type>v</name_type>
+      <filesize>12288</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>191620</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='4096' img_offset='4096' len='12288'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$FAT2</filename>
+      <partition>1</partition>
+      <id>26</id>
+      <name_type>v</name_type>
+      <filesize>12288</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>191621</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+      <byte_runs facet='data'>
+       <byte_run file_offset='0' fs_offset='16384' img_offset='16384' len='12288'/>
+      </byte_runs>
+      <hashdigest type='md5'/>
+      <hashdigest type='sha1'/>
+    </fileobject>
+    <fileobject>
+      <filename>$OrphanFiles</filename>
+      <partition>1</partition>
+      <id>27</id>
+      <name_type>V</name_type>
+      <filesize>0</filesize>
+      <alloc_inode>1</alloc_inode>
+      <alloc_name>1</alloc_name>
+      <used>1</used>
+      <inode>191622</inode>
+      <meta_type>11</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <byte_runs facet='inode'>
+      </byte_runs>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+</dfxml>

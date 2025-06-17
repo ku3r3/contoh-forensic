@@ -1,0 +1,45 @@
+mmls		Menampilkan layout partisi
+fls		Menampilkan file dan direktori
+icat		Mengekstrak file dari image
+istat		Menampilkan metadata file
+fsstat		Menampilkan informasi file system
+blkls		Menampilkan blok data mentah
+tsk_recover	Mengekstrak semua file yang ada
+
+contoh perintah:
+mmls disk_image.dd	    Hasilnya akan menampilkan offset partisi — penting untuk proses mount logis berikutnya.
+
+Buat Loopback Mount (Opsional, untuk Linux)
+Jika ingin menggunakan tools seperti fls atau icat dengan offset tertentu:
+	sudo losetup -f -o $((OFFSET * 512)) disk_image.dd
+	# Misal offset = 2048, berarti offset byte = 2048 * 512 = 1048576
+
+	Atau mount langsung:
+	sudo mount -o loop,ro,offset=1048576 disk_image.dd /mnt/recovery
+
+Gunakan fls untuk melihat isi partisi:
+	fls -o 2048 disk_image.dd
+	    -o 2048 adalah offset partisi (dari mmls).
+
+	Jika ingin lihat direktori tertentu:
+	fls -o 2048 disk_image.dd 128-128-4
+
+Gunakan icat untuk mengekstrak file berdasarkan inode dari hasil fls.
+	icat -o 2048 disk_image.dd 1234 > file_recovered.jpg
+	    Di sini 1234 adalah inode file yang ditemukan dari fls.
+
+Untuk melihat metadata file:
+	istat -o 2048 disk_image.dd 1234
+
+Gunakan fsstat untuk informasi file system:
+	fsstat -o 2048 disk_image.dd
+
+Contoh Alur Praktik
+# 1. Lihat partisi
+	mmls disk.img
+
+# 2. Catat offset partisi NTFS (misalnya offset 2048)
+# 3. List isi root direktori
+	fls -o 2048 disk.img
+# 4. Ambil file penting berdasarkan inode
+	icat -o 2048 disk.img 35 > recovered.txt
