@@ -1,0 +1,4 @@
+
+Jun 15 18:22:01 kali sshd[1024]: Accepted password for root from 192.168.1.5 port 54022 ssh2
+Jun 15 18:25:43 kali sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+Jun 15 18:26:11 kali sshd[1102]: Failed password for root from 10.0.2.15 port 40321 ssh2
